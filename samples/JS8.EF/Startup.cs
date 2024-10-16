@@ -60,11 +60,11 @@ namespace Host8.EntityFramework
                 })
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost:5001";
+                    options.Authority = "https://a-ci.ncats.io/_api/auth/ls";
 
                     // confidential client using code flow + PKCE
-                    options.ClientId = "backchannel-spa";
-                    options.ClientSecret = "secret";
+                    options.ClientId = "bff-duende";
+                    // options.ClientSecret = "07bfe72e-530a-4e1d-9cda-ff736bd4e3eb";
                     options.ResponseType = "code";
                     options.ResponseMode = "query";
 

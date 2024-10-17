@@ -141,6 +141,18 @@
             "request": "launch",
             "preLaunchTask": "build-js8ef",
             "program": "${workspaceFolder}/samples/JS8.EF/bin/Debug/net8.0/JS8.EF.dll",
+            "justMyCode": false,
+            "symbolOptions": {
+                "searchPaths": [],
+                "searchMicrosoftSymbolServer": true,
+                "searchNuGetOrgSymbolServer": true
+            },
+            "sourceLinkOptions": {
+                "*": {
+                    "enabled": true
+                }
+            },
+            "suppressJITOptimizations": true,
             "args": [],
             "cwd": "${workspaceFolder}/samples/JS8.EF",
             "env": {
